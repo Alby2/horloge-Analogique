@@ -80,39 +80,3 @@ const stopTimer = ()=>{
 
     clearInterval(timer)
 }
-var timerPlein
-const addImage = ()=>{
-    let i =0
-    timerPlein =setInterval(() => {
-        i++;
-        console.log(i);
-        let classValue = ".onePlein"
-        let divValue = ".onePlein"
-       if(i<=20){
-         classValue = ".onePlein"
-         divValue='<div style="width:10px ;height: 100%; background-color:  rgba(0, 55, 255, 0.567);z-index: 10;margin-top:0px;transform:rotate(0deg);"></div>'
-       }else if(i<=40){
-        classValue ='.twoPlein'
-        
-        divValue='<div style="width:100% ;height: 10px; background-color:  rgba(0, 55, 255, 0.567);z-index: 10;margin-top:0px;transform:rotate(0deg);"></div>'
-       }
-       else if(i<=60){
-        classValue ='.threePlein'
-        divValue='<div style="width:10px ;height: 100%; background-color:  rgba(0, 55, 255, 0.567);z-index: 10;margin-top:0px;transform:rotate(0deg);"></div>'
-       }
-       else if(i<=80){
-        classValue ='.forPlein'
-        divValue=' <div style="width:100% ;height: 10px; background-color:  rgba(0, 55, 255, 0.567);z-index: 10;margin-top:0px;transform:rotate(0deg);"> </div>'
-       }
-       
-       
-       if(i == 81){
-         clearInterval(timerPlein)
-       }else{
-        document.querySelector(classValue).innerHTML += divValue
-
-       }
-       
-    }, 10);
-}
-addImage()
