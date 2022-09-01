@@ -1,0 +1,59 @@
+.base{
+    width:900px;
+    height:100vh;
+    justify-content:center;
+    text-align: center;
+    margin-top:-20%;
+    margin-left: 50%;
+    transform: rotate(270deg);
+}
+
+
+#bs{
+    transform: rotate(0deg);
+    width: 2px;
+    height:5px;
+    position: absolute;
+    display: flex;
+    background-color: rgb(28, 123, 206);
+    z-index: 10;
+    
+}
+#bs .one{
+    min-width: 250px;
+    background-color: black
+}
+#bs .two{
+    min-width: 10px;
+    height: 10px;
+    justify-content: center;
+    text-align: center;
+
+ 
+}
+
+#bm{
+    transform: rotate(0deg);
+    width: 2px;
+    height:5px;
+    position: absolute;
+    display: flex;
+    background-color: rgb(125, 189, 245);
+}
+#bm div{
+    min-width: 250px;
+    background-color: rgb(22, 111, 158);
+}
+
+#bh{
+    transform: rotate(0deg);
+    width: 2px;
+    height:5px;
+    position: absolute;
+    display: flex;
+    background-color: rgb(28, 123, 206);
+}
+#bh div{
+    min-width: 150px;
+    background-color: rgb(217, 8, 8);
+}
